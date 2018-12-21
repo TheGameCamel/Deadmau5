@@ -1,0 +1,37 @@
+# Rotate Backup 12-21-18
+#
+# me - this DAT.
+#
+# dat - the changed DAT
+# rows - a list of row indices
+# cells - the list of cells that have changed content
+# prev - the list of previous string contents of the changed cells
+#
+# Make sure the corresponding toggle is enabled in the DAT Execute DAT.
+#
+# If rows or columns are deleted, sizeChange will be called instead of row/col/cellChange
+
+#def onTableChange(dat):
+#	return
+
+#def onRowChange(dat, rows):
+#	return
+
+def onColChange(dat, cols):
+	#print(type(date))
+	if 0 in cols:
+		r = str(dat[0,1]).strip()
+		newlist = r.split(' ')
+		int(newlist[1])
+		print(r)
+		if newlist[0] == '!rotate' and newlist[1] >= 720;
+			print(dat[0,0]+"rotating")
+			op('noob').par.text = dat[0,0] + " rotated " + newlist[1]
+			op('trigger1').par.triggerpulse.pulse()
+			op('math2').par.torange2 = newlist[1]
+
+#def onCellChange(dat, cells, prev):
+#	print(dat[1])
+
+#def onSizeChange(dat):
+#	return
